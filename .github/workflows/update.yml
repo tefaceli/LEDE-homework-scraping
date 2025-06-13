@@ -1,5 +1,5 @@
 # You can name this whatever you want
-name: daily
+name: 2-hour scraper
 
 # You will get an error on the automatic updates committing
 # if you do not have this line
@@ -24,7 +24,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.10'
+        python-version: '3.12'
     - name: Install all necessary packages
       run: pip install jupyter lxml pandas requests beautifulsoup4 html5lib
     - name: Scraping the data
