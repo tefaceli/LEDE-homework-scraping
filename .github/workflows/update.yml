@@ -28,7 +28,7 @@ jobs:
     - name: Install all necessary packages
       run: pip install jupyter lxml pandas requests beautifulsoup4 html5lib
     - name: Scraping the data
-      run: jupyter nbconvert --to notebook --execute "/part_2/homework_7_part2.ipynb" --stdout
+      run: jupyter nbconvert --to notebook --execute "homework_7_part2.ipynb" --stdout
     - name: Commit and push any changes
       run: |-
         git config user.name "Automated"
